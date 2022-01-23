@@ -12,7 +12,6 @@ const Name = "alef"
 
 func init() {
 	server.RegisterPlugin(Name, New)
-	config.RegisterDefaultPluginConfig(Name, &DefaultConfig)
 }
 
 func New(config config.Config) (server.Plugin, error) {
@@ -36,5 +35,4 @@ func (a *Alef) Name() string {
 }
 
 type Alef struct {
-	config *Config
 }
