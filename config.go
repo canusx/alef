@@ -8,12 +8,12 @@ type Config struct {
 
 // Validate validates the configuration, and return an error if it is invalid.
 func (c *Config) Validate() error {
-	return c.Validate()
+	return nil
 }
 
 // DefaultConfig is the default configuration.
 var DefaultConfig = Config{}
 
 func (c *Config) UnmarshalYAML(unmarshal func(interface{}) error) error {
-	return c.Validate()
+	return nil
 }
